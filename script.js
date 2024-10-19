@@ -32,22 +32,22 @@ function changeJobTitle(){
     setTimeout(() => {
         job.innerHTML = "Author";
         place.innerHTML = "Webnovel";
-    }, 0);
+    }, 15000);
 
     setTimeout(() => {
         job.innerHTML = "Ghostwriter";
         place.innerHTML = "Upwork";
-    }, 1000);
+    }, 10000);
 
     setTimeout(() => {
         job.innerHTML = "AE";
         place.innerHTML = "Webnovel";
-    }, 3000);
+    }, 5000);
 }
 
 setInterval(() => {
     changeJobTitle();
-}, 5000);
+}, 20000);
 
 
 function tarBook(){
