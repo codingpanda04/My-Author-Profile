@@ -135,7 +135,7 @@ body{
 }
 
 /*Media Queries*/
-@media (max-width:721px) {
+@media (max-width:719px) {
     body{
         overflow-x: hidden;
     }
