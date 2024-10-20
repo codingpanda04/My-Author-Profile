@@ -16,6 +16,7 @@
         </div>
         <div class="links">
             <ol>
+                <img src="images/close.png" alt="" id="close" onclick="hideMenu()">
                 <li class="active" id="home" onclick="homePage()">HOME</li>
                 <li onclick="displayList()" id="books">BOOKS</li>
                 <select class="book-list">
@@ -39,6 +40,9 @@
             <a href="https://www.webnovel.com/profile/4322552387" target="_blank">
                 <img src="images/webnovel.jpeg" alt="">
             </a>
+        </div>
+        <div class="menu">
+            <img src="images/menu.png" alt="" onclick="displayMenu()">
         </div>
     </nav>
 
@@ -77,5 +81,19 @@
         </div>
     </section>
     <script src="script.js"></script>
+    <script>
+        const socialsDiv = document.querySelector(".socials");
+        const menuDiv = document.querySelector(".links");
+
+        function displayMenu(){
+            menuDiv.style.display = "block";
+            socialsDiv.style.marginLeft = "-300px";
+        }
+
+        function hideMenu(){
+            menuDiv.style.display = "none";
+            socialsDiv.style.marginLeft = "30px";
+        }
+    </script>
 </body>
 </html>

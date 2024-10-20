@@ -8,6 +8,7 @@ function displayList(){
     books.classList.add("active");
     contact.classList.remove("active");
     bookList.style.display = "block";
+    window.location.href = "books.html";
 }
 
 function homePage(){
@@ -15,6 +16,7 @@ function homePage(){
     books.classList.remove("active");
     contact.classList.remove("active");
     bookList.style.display = "none";
+    window.location.href = "index.html";
 }
 
 function contactPage(){
@@ -22,6 +24,7 @@ function contactPage(){
     books.classList.remove("active");
     contact.classList.add("active");
     bookList.style.display = "none";
+    window.location.href = "contact.html";
 }
 
 
@@ -32,22 +35,22 @@ function changeJobTitle(){
     setTimeout(() => {
         job.innerHTML = "Author";
         place.innerHTML = "Webnovel";
-    }, 15000);
+    }, 75000);
 
     setTimeout(() => {
         job.innerHTML = "Ghostwriter";
         place.innerHTML = "Upwork";
-    }, 10000);
+    }, 5000);
 
     setTimeout(() => {
         job.innerHTML = "AE";
         place.innerHTML = "Webnovel";
-    }, 5000);
+    }, 2500);
 }
 
 setInterval(() => {
     changeJobTitle();
-}, 20000);
+}, 10000);
 
 
 function tarBook(){
@@ -81,3 +84,5 @@ function tarBook(){
 setInterval(() => {
     tarBook();
 }, 20000);
+
+
